@@ -1,0 +1,781 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Selenium-Interview Questions | JALA Technologies</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sl-slide.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+  <script language="javascript">
+        document.onmousedown = disableclick;
+        status = "Right Click Disabled";
+        function disableclick(event) {
+            if (event.button == 2) {
+                alert(status);
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body oncontextmenu="return false">
+     
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="logo" href="index.html" class="pull-left"></a>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+                        <li><a href="index.html">Home</a></li>
+                         <li><a href="services.html">Services</a></li>
+                        <li><a href="career.html">CAREERS</a></li>
+                         <!-- <li class="dropdown inactive" >
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">.Net  Trining<i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                               <li class="active"><a href="net-coursecontent.html">Course Content</a></li>
+                                <li><a href="net-whoisthisprogramfor.html">Who is this program for?</a></li>
+                                <li><a href="net-howweguaranteeaJOB.html">How we guarantee a JOB</a></li>
+                                <li><a href="net-feedetails.html">Fee Details</a></li>
+                                <li><a href="net-testimonials.html">Testimonials</a><li>
+                                
+                                <li><a href="net-faq.html">FAQs</a></li>
+                            </ul>
+                          </li> -->
+                         <li><a href="about-us.html">About Us</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Course Details<i class="icon-angle-down"></i></a>
+                           <ul class="dropdown-menu">
+                                <li class="active"><a href="coursecontent.html">Course Content</a></li>
+                                <li><a href="whoisthisprogramfor.html">Who is this program for?</a></li>
+                                <!--<li><a href="selenium-whythisprogramisUNIQUE.html">Why this program is Unique</a></li> -->
+                                <li><a href="coursedetails.html">Course Details</a></li>
+                                <li><a href="feedetails.html">Fee Details</a></li>
+                                <li><a href="enrollment_process.html">Enrollment Process</a><li></li>
+                                <li><a href="course_faqs.html">FAQs</a></li>
+								<li><a href="jobOpenings.html">Job Openings</a></li>
+								<li><a href="employers.html">Employers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                        <li class="login">
+                            <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <section class="title">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span6">
+                   <!-- <h1>Frequently Asked Questions</h1>-->
+                     <table>
+                        <tr>
+                            <td><h4> </h4></td>
+                            <td><h3>Interview Questions</h3> </td>
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="span6">
+                    <ul class="breadcrumb pull-right">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .title -->       
+
+  <section id="faqs" class="container">
+
+
+<!-- <p style="font-size: x-large; color: #0000FF;">Table of Contents</p>
+<ol style="font-size: medium">
+<li><a href="#_Toc446958485"> JAVA Questions </a></li>
+<li><a href="#_Toc446958486"> Selenium Questions </a></li>
+<li><a href="#_Toc446958487"> Selenium Exceptions </a></li>
+<li><a href="#_Toc446958488"> TestNG Questions </a></li>
+<li><a href="#_Toc446958489"> AutoIT Questions </a></li>
+<li><a href="#_Toc446958490"> DataBase Questions </a></li>
+<li><a href="#_Toc446958491"> Selenium Grid Questions </a></li>
+<li><a href="#_Toc446958492"> Manual Testing Questions </a></li>
+<li><a href="#_Toc446958493"> Mobile Testing Automation Questions </a></li>
+<li><a href="#_Toc446958494"> Frameworks Questions </a></li>
+
+
+</ol>
+<p>&nbsp;</p>-->
+<h4><a name="_Toc446958485"></a>1.&nbsp;JAVA Questions</h4>
+<ul>
+<li>Print primary numbers from 1-100</li>
+<li>Count number of vowels in a string</li>
+<li>Convert the string into lower case and upper case with using the conversion methods</li>
+<li>String Reverse Without using String API</li>
+<li>Interfaces allow constructors </li>
+<li>Find sum of digits in java</li>
+<li>Swap two numbers without using third variable in java</li>
+<li>Check string is palindrome or not</li>
+<li>Reverse a number in java</li>
+<li>Fibonacci series with Recursive</li>
+<li>Fibonacci series without using Recursive</li>
+<li>Can we create static constructor in java</li>
+<li>Super keyword in java</li>
+<li>final /finally/finalize keyword</li>
+<li>Can we create private constructor in java</li>
+<li>Java Program to find Second highest number in an integer array</li>
+<li>Interface and where we are using in your project automation</li>
+<li>abstract class and where you are using in your Selenium automation</li>
+<li>How do you read data from excel</li>
+<li>How to check internet connection using java</li>
+<li>There are 3 subjects and 5 students find the average marks of each student</li>
+<li>Constructors and the usage of constructors in your project</li>
+<li>How to create immutable class in java</li>
+<li>Difference between String, String Buffer and String Builder</li>
+<li>Check Even or Odd without using modulus and division</li>
+<li>Find Biggest substring in between specified character</li>
+<li>Sort the String using string API?</li>
+<li>Sort the String without using String API?</li>
+<li>What is the difference between method overloading and method overriding?</li>
+<li>How to find largest element in an array with index and value?</li>
+<li>Sort integer array using bubble sort in java?</li>
+<li>Object Cloning in java example?</li>
+<li>Program for create Singleton class?</li>
+<li>Check Armstrong number or not?</li>
+<li>Remove duplicate elements from an array</li>
+<li>Convert Byte Array to String</li>
+<li>Print 1 to 10 without using loops</li>
+<li>How to Add elements to hash map and Display</li>
+<li>Sort ArrayList in descending order</li>
+<li>Write the code for Reading and Writing to Excel through Selenium</li>
+<li>Print Prime numbers from 1 to 100</li>
+<li>Difference between ArrayList and HashSet in Java</li>
+<li>Difference between Hashtable and HashMap in Java</li>
+<li>Difference between List and Set in Java</li>
+<li>Difference between ArrayList and Vector in Java</li>
+<li>Difference between PATH and Classpath in Java</li>
+<li>Program to convert a string to number</li>
+<li>Write a program to get the distinct word list in a given file</li>
+<li>Can you access non static variable in static context</li>
+<li>How to find top two maximum number in array</li>
+<li>How do you sort Java object using Comparator</li>
+
+</ul>
+<p>&nbsp;</p>
+<h4><a name="_Toc446958486"></a>2.&nbsp;Selenium Questions</h4>
+<ul>
+
+<li>What are the languages supported by WebDriver</li>
+<li>What are different types of locators</li>
+<li>Difference between getText and getValue</li>
+<li>Verify and Assert difference</li>
+<li>How to get the value from text box</li>
+<li>How to identify the image</li>
+<li>In a drop down get the value of 3rd position text</li>
+<li>How many ways you can start a selenium server?</li>
+<li>How many different commands you know in Selenium Web Driver?</li>
+<li>How to generate report using Junit?</li>
+<li>How to do cross-browser testing</li>
+<li>How to handle certificate page in selenium</li>
+<li>How to invoke Chrome/IE/Safari browsers in Selenium?</li>
+<li>How to test Ajax application with Selenium?</li>
+<li>What are the different types of locators in Selenium?</li>
+<li>What is Selenese?</li>
+<li>What is the use of xpath</li>
+<li>How Xpath does work?</li>
+<li>Which locator is trustable Xpath or CSS or JQuery?</li>
+<li>Headless browser Testing means</li>
+<li>How to handle hidden Elements in application</li>
+<li>What is the return type of findElements() method</li>
+<li>Can I store test data in JSON file?</li>
+<li>Is it possible to store object locators in .xml file?</li>
+<li>What are the different types of frameworks?</li>
+<li>How can I read test data from excels?</li>
+<li>Can captcha be automated?</li>
+<li>How to handle drop down</li>
+<li>How to read PDF file?</li>
+<li>How to upload image to application</li>
+<li>How to read xml file and verify the attributes?</li>
+<li>How to automate videos using selenium like in youtube?</li>
+<li>How to do parameterization in Selenium IDE?</li>
+<li>What are the prerequisites to run selenium webdriver</li>
+<li>What are the advantages of selenium webdriver</li>
+<li>How to get the number of frames on a page</li>
+<li>How do you simulate scroll down action</li>
+<li>Which  is the package which is to be imported while working with WebDriver</li>
+<li>How to check if an element is visible on the web page</li>
+<li>How to check if a button is enabled on the </li>
+<li>How to check if a text is highlighted on the page</li>
+<li>How to check the checkbox or radio button is selected</li>
+<li>How to get the title of the page</li>
+<li>How do u get the width of the textbox</li>
+<li>How do u get the attribute of the web element</li>
+<li>How to check whether a text is underlined or not</li>
+<li>How to change the URL on a webpage using selenium web driver<li>
+<li>How to hover the mouse on an element</li>
+<li>What is the use of getOptions() method</li>
+<li>What is the use of deSelectAll() method</li>
+<li>Is WebElement an interface or a class</li>
+<li>FirefoxDriver is class or an interface and from where is it inherited</li>
+<li>Which is the super interface of webdriver</li>
+<li>What is the difference between close() and quit()</li>
+<li>How to enter text without using sendkeys()</li>
+<li>How to run webdriver in IE browser</li>
+<li>What are the limitations of Selenium</li>
+<li>What are the different types of waits available in WebDriver?</li>
+<li>What are the different types of Drivers available in WebDriver?</li>
+<li>How can you find if an element in displayed on the screen?</li>
+<li>What are the different types of navigation commands?</li>
+<li>How to click on a hyper link using linkText?</li>
+<li>How to find more than one web element in the list?</li>
+<li>How can we handle web based pop up?</li>
+<li>How to assert title of the web page?</li>
+<li>How to retrieve css properties of an element?</li>
+<li>How to capture screenshot in WebDriver?</li>
+<li>What is the difference between Assert and Verify</li>
+<li>What is the alternate way to click on login button</li>
+<li>How to perform right click using WebDriver</li>
+<li>How to perform drag and drop using WebDriver</li>
+<li>Give the example for method overload in WebDriver</li>
+<li>How do you upload a file</li>
+<li>How to get typed text from a textbox</li>
+<li>How do you click on a menu item in a drop down menu</li>
+<li>How do you simulate browser back and forward</li>
+<li>How do you get the current page URL</li>
+<li>What is the difference between ‘/’ and ‘//’</li>
+<li>What is the difference between findElement and findElements</li>
+<li>How do you take screen shot without using EventFiringWebDriver</li>
+<li>How do you send ENTER/TAB keys in webdriver</li>
+<li>How to switch back from a frame</li>
+<li>How to type text in a new line inside a text area</li>
+<li>How to perform double click using WebDriver</li>
+<li>How to press Shift+Tab</li>
+<li>What is the use of contextClick() </li>
+<li>What is the difference between getWindowHandles() and getWindowHandle()</li>
+<li>What are the browsers supported by Selenium IDE</li>
+<li>How to check all checkboxes in a page</li>
+<li>Count the number of links in a page</li>
+<li>How do you identify the Xpath of element on your browser</li>
+<li>What is actions class in webdriver</li>
+<li>How do you achieve synchronization in WebDriver</li>
+
+
+</ul>
+      <br />
+
+<h4><a name="_Toc446958487"></a>3.&nbsp;Selenium Exceptions</h4>
+<ul>
+
+<li>NoSuchElementException</li>
+<li>StaleElementReferenceException</li>
+<li>TimeoutException</li>
+<li>ElementNotVisibleException</li>
+<li>ElementNotSelectableException</li>
+<li>NoSuchWindowException</li>
+<li>UnexpectedTagNameException</li>
+<li>NoSuchFrameException</li>
+<li>WebDriverException</li>
+<li>NoSuchAttributeException</li>
+<li>NoAlertPresentException</li>
+<li>InvalidElementStateException</li>
+<li>RemoteDriverServerException</li>
+<li>What are the different exceptions you got when working with WebDriver</li>
+
+</ul>
+      <br />
+<h4><a name="_Toc446958488"></a>4.&nbsp;TestNG Questions</h4>
+<ul>
+<li>What are the benefits of using TestNG</li>
+
+<li>What are the benefits of using TestNG</li>
+<li>What are the annotations used in TestNG</li>
+<li>What is the difference between before method and before class</li>
+<li>What are the different attributes for @Test annotation?</li>
+<li>Can we run group of test cases using TestNG</li>
+<li>What is object repository</li>
+<li>What is TestNG and how is it better than Junit?</li>
+<li>How to set test case priority in TestNG</li>
+<li>In TestNG how can you disable a test</li>
+<li>Explain what is parametric testing?</li>
+<li>Explain in what ways does TestNG allows you to specify dependencies?</li>
+<li>How to set priority of @Test method? What is its usage?</li>
+<li>How to write regular expression In testng.xml file</li>
+<li>How to manage dependencies between the test cases in TestNG</li>
+
+</ul>
+      <br />
+
+<h4><a name="_Toc446958489"></a>5.&nbsp;AutoIT Questions</h4>
+<ul>
+<li>What is the use of AutoIt tool</li>
+<li>Does AutoIt support only Windows Platform</li>
+<li>How to call AutoIt executable file using Java</li>
+<li>How to handle Windows internal application Automation</li>
+<li>What is au3</li>
+<li>How to integrate AutoIt with Selenium</li>
+</ul>
+<p>&nbsp;</p>
+<h4><a name="_Toc446958490"></a>6.&nbsp;DataBase Questions</h4>
+<ul>
+<li>Why Database is dependent factor to be considered for Automation Testing</li>
+<li>What is the difference between DBMS and RDBMS</li>
+<li>What are the available RDBMS</li>
+<li>How to access different databases with Java</li>
+<li>How many JDBC drivers and which is the best suitable driver to work on cross-platform</li>
+<li>What is the difference between DDL and DML commands</li>
+<li>Which language is used in interacting with database</li>
+<li>What is the difference between prepared statement and statement</li>
+<li>Triggers and Procedures</li>
+<li>Write a Sql query for Joins and types of Joins</li>
+<li>What is Primary key and foreign key?</li>
+<li>What is Group by command?</li>
+<li>What is the difference between Delete and truncate commands?</li>
+<li>How to see the database field formats</li>
+<li>Difference between drop and delete commands</li>
+<li>How to use regular expression in sql query</li>
+<li>List some functions in sql</li>
+<li>Login as a root user, create a new user on MySQL db. Login with new user and update privileges</li>
+<li>How to update info already in a table</li>
+<li>How to update database permissions/privileges</li>
+<li>How to change/delete/create a column in table</li>
+</ul>
+<p>&nbsp;</p>
+<h4><a name="_Toc446958491"></a>7.&nbsp;Selenium Grid Questions</h4>
+<ul>
+<li>How to Configure Selenium Grid:</li>
+<li>How to test multiple browsers in distributed environment</li>
+<li>List out the technical challenges with GRID</li>
+<li>Explain how Selenium Grid works?</li>
+<li>Can we use Selenium grid for performance testing?</li>
+</ul>
+<br />
+<h4><a name="_Toc446958492"></a>8.&nbsp;&nbsp;&nbsp; Manual Testing Questions</h4>
+<ul>
+<li> What is Regression testing and Functional Testing?</li>
+<li>What is system testing and Regression Testing?</li>
+<li>In which phase the peer review will be done</li>
+<li>What is Internalization Testing?</li>
+<li>Tell me about Load, performance and Stress Testing</li>
+<li>Write test scenarios for save button</li>
+<li>What is severity and priority?</li>
+<li>Give S1 and P4 Examples</li>
+<li>What is Test Plan?</li>
+<li>What are the Contents available in Bug Tracking Tool?</li>
+<li>If developer does not accept the bug raised by you then what would you do</li>
+<li>How would you retrieve given data that was saved in your project application?</li>
+<li>How can you know the Written Test cases were Good test cases or Bad test cases?</li>
+<li>What is cross browser Testing</li>
+<li>What is agile model?</li>
+<li>What is Regression Testing?</li>
+<li>What is system integration testing?</li>
+<li>What is Sanity Testing?</li>
+<li>What is an agile, Water fall model, V-model?</li>
+<li>What is RTM when did you use this</li>
+<li>Tell about SDLC</li>
+<li>Tell about Bug Life cycle</li>
+<li>If u don&rsquo;t have your requirement as a tester what u can do</li>
+<li>SCRUM Life cycle?</li>
+<li>What would you do if your TL asks U TO execute 300 test cases in a day?</li>
+<li>What is Six Sigma? Explain</a>?</li>
+<li>What is SOA Testing?</li>
+<li>What is Fuzz Testing?</li>
+<li>Can anyone tell me what is in review and walkthrough?</li>
+<li>Write negative / -ve test cases for pen?</li>
+<li>How to write test case for Email id?</li>
+<li>What are Test cases for isosceles and equivalent triangle?</li>
+<li>What is Top-Down Testing?</a></li>
+<li>What is Alpha and Beta testing?</a></li>
+<li>Difference between defect profile document and bug tracking tool?</li>
+<li>What is the difference between bug log and defect tracking?</li>
+<li>What do you do if developer not accepted the bug?</li>
+<li>What are the Defect statuses in Bug life cycle?</li>
+<li>What will you do when you find a bug?</li>
+<li>What are the bugs we cannot find in black box testing?</li>
+<li>Who will reject the bug when it is not genuine?</a></li>
+<li>What are the two categories of defects?</li>
+<li>Which is better testing technique?</li>
+<li>Regarding verification and validation?</li>
+<li>What are the defect severity and priority?</li>
+<li>Which technique is used for writing the Test cases?</a></li>
+<li>Difference between smoke and sanity testing?</li>
+<li>What is Top-Down Testing?</li>
+<li>What is Alpha and Beta testing?</a></li>
+<li>What is Open box and closed box testing?</a></li>
+<li>When manual testing?</li>
+<li>What is the difference between Static and Dynamic Testing?</li>
+<li>What is Stochastic Testing?</li>
+<li>Which model is best one?</li>
+<li>What is Traceability Matrix?</li>
+<li>Why adhoc testing is also called random testing?</li>
+<li>What is the most important thing in testing?</li>
+<li>Can anyone tell me how many times we need to perform regression testing?</li>
+<li>Logistics in software testing?</li>
+<li>What is Test ware? How Test ware Produce?</li>
+<li>How can it be known when to stop testing?</li>
+<li>Difference between web server and client-server application?</li>
+<li>What are two types of Metrics?</li>
+<li>What are the common myths about Testing?</li>
+<li>What are different types of metrics used in testing?</li>
+<li>What is Metrics?</a></li>
+</ul>
+<p>&nbsp;</p>
+<h4> <a name="_Toc446958493"></a>9.&nbsp;&nbsp; Mobile Testing Automation Questions</h4>
+<ul>
+<li>What is the difference between Mobile device testing and mobile application testing?</li>
+<li>What are the types of mobile applications?</li>
+<li>How to test CPU usage on mobile devices?</li>
+<li>What are the defects tracking tools used for mobile testing?</li>
+<li>What all major networks to be considered while performing application testing?</li>
+<li>Which things to consider testing a mobile applicationthrough black box technique</a>?</li>
+<li>What is the latest version of iOS?</li>
+<li>What is the latest version of Android?</li>
+<li>What is the extension of Android files?</li>
+<li>What is the extension of iOS files?</li>
+<li>What is the full form of MMS?</li>
+<li>What are MT and MO in SMS?</li>
+<li>What is WAP?</li>
+<li>What is GPRS and how it works?</li>
+<li>What is the latest version of Windows?</li>
+<li>What do you mean by Streaming media?</li>
+<li>What are the automation tools available for mobile application testing?</li>
+<li>What is the best way to test different screen sizes of the devices?</li>
+<li>What is the basic difference between Emulator and Simulator?</li>
+<li>What are the common challenges in mobile application testing?</li>
+<li>What are the tools based on cloud based mobile testing?</li>
+<li>What web services are used by mobile app?</li>
+<li>What all devices have you worked till now?</li>
+<li>How to create Emulator on Android?</li>
+<li>Does Selenium support mobile internet testing?</li>
+<li>Does Selenium support Google Android Operating System?</li>
+<li>Name debugging tools for mobile?</li>
+<li>Name mobile automation testing tools you know?</li>
+<li>What is the strategy used to test new mobile app?</li>
+<li>What does a test plan for Mobile App contain?</li>
+<li>Why mobile phone has 10 digit numbers?</li>
+<li>Explain critical bugs that you come across while testing in mobile devices or application?</li>
+<li>Name mobile application testing tools</li>
+<li>Full form of the various extensions
+<ol>
+<li>apk &ndash;</li>
+<li>exe &ndash;</li>
+<li>iPA --</li>
+<li>prc &ndash;</li>
+<li>jad &ndash;</li>
+<li>adb&nbsp;&ndash;</li>
+<li>Aapt&nbsp;&ndash;&nbsp;</li>
+</ol>
+</li>
+<li>How to test different screen sizes of the devices</li>
+<li>What are the roles and responsibilities on current mobile application you are testing?</li>
+<li>How to create the log file?</li>
+<li>How can we install the build on iPhones and iPads?</li>
+<li>Can we use QTP/UFT for mobile automation testing?</li>
+<li>Is cloud base mobile testing possible? Name any?</li>
+<li>Where to perform forward compatibilitytesting?</li>
+</ul>
+<p>&nbsp;</p>
+<h4><a name="_Toc446958494"></a>10.&nbsp;Appium</h4>
+<ul>
+<li>What are the Advantages of using Appium?</li>
+<li>Do I need Appium?</li>
+<li>How difficult is it to set up a working environment?</li>
+<li>What is Appium's strongest point?</li>
+<li>What is Appium's weakest point?</li>
+<li>What is the Appium Philosophy?</li>
+<li>Why do the Appium clients exist?</li>
+<li>Explain what is Appium?</li>
+<li>What are main Advantages of using Appium on Sauce Labs?</li>
+<li>Which language should I use to write my tests?</li>
+<li>What type of tests are suitable for Appium?</li>
+<li>Can Appium be used for all my tests?</li>
+<li>List out the Appium abilities?</li>
+<li>List out the pre-requisite to use APPIUM?</li>
+<li>What is Appium's most considerable limitation?</li>
+<li>How active is Appium?</li>
+<li>What about performance?</li>
+<li>Which approach is the best? Testing on real devices or simulators/emulators?</li>
+<li>Tests on emulators or simulators?</li>
+<li>What platforms are supported?</li>
+<li>Do I need a server machine to run tests on Appium?</li>
+<li>List out the limitations of using Appium?</li>
+<li>How can I test Android tablets?</li>
+<li>How can I run manual tests for my mobile native app or mobile hybrid app?</li>
+<li>What type of keyboard and buttons do the Android emulators have?</li>
+<li>Explain how to find DOM element or xPath in a mobile application?</li>
+<li>Explain the design concept of Appium?</li>
+<li>What language does Appium support?</li>
+<li>Explain the pros and cons of Appium?</li>
+<li>I already have platform-specific tests for my app, what should I do to migrate to Appium?</li>
+<li>How much time does it take to write a test in Appium?</li>
+<li>Any tips or tricks to speed up my test writing activity or my migration process?</li>
+<li>What test frameworks are supported by Appium?</li>
+<li>Can I interact with my apps using Javascript while I am testing with Appium?</li>
+<li>Is it Returning the values?</li>
+<li>How can I exchange data between my test and the app I am testing?</li>
+<li>What data exchange is?</li>
+<li>What are Testability layers?</li>
+<li>Is it Exchanging data through Javascript?</li>
+<li>What are the most difficult scenarios to test with Appium?</li>
+<li>I don't want to set up a whole infrastructure for my tests and I don't want to spend money on HW. Can Appium help me?</li>
+<li>I need to debug Appium, is it difficult?</li>
+<li>I build my apps with Cordova, is it supported by Appium?</li>
+<li>Explain what is APPIUM INSPECTOR?</li>
+<li>What are the basic commands that I can use in the  Selenium protocol?</li>
+<li>I want to run my tests in a multithreaded environment, any problems with that?</li>
+<li>Mention what are the basic requirement for writing Appium tests?</li>
+<li>How can I run Android tests without Appium?</li>
+<li>How can I run iOS tests without Appium?</li>
+<li>What mobile web browsers can I automate in the Android emulator?</li>
+</ul>
+      <p>
+          &nbsp;</p>
+
+      <h4 style="font-size: large; font-style: normal; color: #0000FF"> Visit below links </h4>
+         <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-coursecontent.html">Cource Content</a></li>
+         <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-whoisthisprogramfor.html">Who is this program for?</a></li>
+         <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-howweguaranteeaJOB.html">How we guarantee a JOB</a></li>
+        <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-whythisprogramisUNIQUE.html">Why this program is UNIQUE</a></li>
+         <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-feedetails.html">Fee Details</a></li>
+        <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-faq.html">FAQs</a></li>
+         <li style="font-size: small; font-style: oblique; color: #FF00FF"><a href="selenium-testimonials.html">Testimonials</a>
+    </p>
+    
+</section>
+
+<!--Bottom-->
+<section id="bottom" class="main">
+    <!--Container-->
+    <div class="container">
+
+        <!--row-fluids-->
+        <div class="row-fluid">
+
+            <!--Contact Form-->
+            <div class="span3">
+                <h4>ADDRESS</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong></strong>  #1-98/9/24, Flat No:402, 4th Floor,
+                                                               Beside Lot Mobile Lane,
+                                                               Image Gardens Road,
+                                                                Arunodaya Colony, Madhapur,
+                                                                Hyderabad - 500081,
+                                                              Telangana, India.
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> hr@jalatechnologies.com
+                    </li>
+                    <li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> www.jalatechnologies.com
+                    </li>
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Phone:</strong> 798-993-9242
+                    </li>
+                </ul>
+            </div>
+            <!--End Contact Form-->
+
+            <!--Important Links-->
+            <div id="tweets" class="span3">
+                <h4>OUR COMPANY</h4>
+                <div>
+                    <ul class="arrow">
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="contact-us.html">Support</a></li>
+                        
+                        <li><a href="values.html">values</a></li>
+                        
+                        <li><a href="career.html">We are hiring</a></li>
+                         <li><a href=" employers.html">For Employers</a></li> 
+                        
+                        
+                    </ul>
+                </div>  
+            </div>
+            <!--Important Links-->
+
+            <!--For Students--> 
+            <div id="students" class="span3">
+                <h4>For Students</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong></strong> Send your resume to the below email id &<br>Get ready for the written test on any programming language
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> resume@jalatechnologies.com
+                    </li>
+                   <!--   <li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> www.jalatechnologies.com
+                    </li>
+                  <li>
+                        <i class="icon-phone"></i>
+                        <strong>Phone:</strong> 998-993-9242
+                    </li> -->
+                </ul>
+            </div>
+            <!--For Students-->
+			<!--For Employers--> 
+            <div id="employers" class="span3">
+                <h4>For Employers</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong></strong> Send your interest to the below email id<br>Our HR Manager will get in touch with you
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> hr@jalatechnologies.com
+                    </li>
+                 <!--    <li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> www.jalatechnologies.com
+                    </li>
+                   <li>
+                        <i class="icon-phone"></i>
+                        <strong>Phone:</strong> 998-993-9242
+                    </li> -->
+                </ul>
+            </div>
+
+           <!-- <div class="span3">
+                <h4>FLICKR GALLERY</h4>
+                <div class="row-fluid first">
+                    <ul class="thumbnails">
+                      <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row-fluid">
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!--/row-fluid-->
+</div>
+<!--/container-->
+
+</section>
+<!--/bottom-->
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 cp">
+                &copy; 2017 Jala technologies. All Rights Reserved.
+            </div>
+            <!--/Copyright-->
+
+            <div class="span6">
+                <ul class="social pull-right">
+                    <li><a href="https://www.facebook.com/jalatechnologies/?fref=ts"><i class="icon-facebook"></i></a></li>
+                   <!-- <li><a href="#"><i class="icon-twitter"></i></a></li>-->
+                   <!-- <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>-->
+                    <!--<li><a href="#"><i class="icon-google-plus"></i></a></li>-->                       
+                    <!--<li><a href="#"><i class="icon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icon-tumblr"></i></a></li>                        
+                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    <li><a href="#"><i class="icon-rss"></i></a></li>
+                    <li><a href="#"><i class="icon-github-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>-->                   
+                </ul>
+            </div>
+
+            <div class="span1">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+
+<!--  Login form -->
+<div class="modal hide fade in" id="loginForm" aria-hidden="false">
+    <div class="modal-header">
+        <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
+        <h4>Login Form</h4>
+    </div>
+    <!--Modal Body-->
+    <div class="modal-body">
+        <form class="form-inline" action="index.html" method="post" id="form-login">
+            <input type="text" class="input-small" placeholder="Email">
+            <input type="password" class="input-small" placeholder="Password">
+            <label class="checkbox">
+                <input type="checkbox"> Remember me
+            </label>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <a href="#">Forgot your password?</a>
+    </div>
+    <!--/Modal Body-->
+</div>
+<!--  /Login form -->
+
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+    <script src="js/analytics.js"></script>
+
+</body>
+</html>
