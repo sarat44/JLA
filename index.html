@@ -29,7 +29,7 @@
 <body>
 <!--Header-->
     <header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
+	<div class="navbar-inner">
             <div class="container">
                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                     <span class="icon-bar"></span>
@@ -37,6 +37,7 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a id="logo" class="pull-left" href="index.html"></a>
+				
                 <div class="nav-collapse collapse pull-right">
                     <ul class="nav navbar-nav">
 				<!--	<a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="index.html">Home <i class="fa fa-angle-down"></i> </a> -->
@@ -45,6 +46,7 @@
                               <a href="course/details/coursedetails.html">Course Details</a>
                           </li>
 						  </ul>
+						<li><a href="index.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="career.html">CAREERS</a></li>
                          <!--
@@ -68,16 +70,32 @@
                                 <!-- <li><a href="selenium-whythisprogramisUNIQUE.html">Why this program is Unique</a></li>-->
                                 <li><a href="coursedetails.html">Course Details</a></li>
                                 <li><a href="feedetails.html">Fee Details</a></li>
-                                <li><a href="enrollment_process.html">Enrollment Process</a><li></li>
+                                <li><a href="enrollment_process.html">Enrollment Process</a></li>
                                 <li><a href="course_faqs.html">FAQs</a></li>
 								<li><a href="jobOpenings.html">Job Openings</a></li>
 								<li><a href="employers.html">Employers</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                        <li class="login">
-                            <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+						<li class="dropdown inactive">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a target="_blank" href="https://id.atlassian.com/login?continue=https%3A%2F%2Fjalatechnologies.atlassian.net%2Flogin%3FredirectCount%3D1%26dest-url%3D%252Fsecure%252FBrowseProjects.jspa%253Fpage%253D1%2526selectedCategory%253Dall%2526selectedProjectType%253Dall">JIRA</a></li>
+								<li><a target="_blank" href="http://brightitcareer.com/">BrightITCareer</a></li>
+								<li><a target="_blank" href="http://magnus1.jalatechnologies.com/">Selenium Project</a></li>
+                               <!--<li><a href="selenium-whythisprogramisUNIQUE.html">Why this program is Unique</a></li>
+                                <li><a href="coursedetails.html">Course Details</a></li>
+                                <li><a href="feedetails.html">Fee Details</a></li>
+                                <li><a href="enrollment_process.html">Enrollment Process</a></li>
+                                <li><a href="course_faqs.html">FAQs</a></li>
+								<li><a href="jobOpenings.html">Job Openings</a></li>
+								<li><a href="employers.html">Employers</a></li> -->
+                            </ul>
                         </li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                       
+                       <!-- <li class="login">
+                            <a data-toggle="modal" href="#loginForm"><i class="icon-lock"></i></a>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -88,7 +106,7 @@
 
     <!--Slider-->
     <section id="slide-show">
-     <div id="slider" class="sl-slider-wrapper">
+	   <div id="slider" class="sl-slider-wrapper">
 
         <!--Slider Items-->    
         <div class="sl-slider">
@@ -97,7 +115,7 @@
                 <div class="sl-slide-inner">
                     <div class="container">
                         <img class="pull-right" src="images/sample/slider/img1.png" alt="" />
-                        <h2>Have You decided to build your career on automation ?</h2>
+                        <h2>100 Days Program to become a Software Engineer</h2>
                         <h3 class="gap"></h3>
                         <a class="btn btn-large btn-transparent" href="coursedetails.html" background-color="green"> Course Details</a>
                     </div>
@@ -143,6 +161,19 @@
                 </div>
             </div>
             <!--Slider Item4-->
+			<!--Slider Item5-->
+            <div class="sl-slide item5" data-orientation="horizontal" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="container">
+                        <img class="pull-right" src="images/sample/slider/gh.jpg" alt="" />
+                        <center><h2>Do You Need<br>
+						A JOB or Course!</h2><br>
+                        <h3>(Pay when You Get A Job)</h3></center>
+                       <!-- <a class="btn btn-large btn-transparent" href="coursedetails.html"> Course Details</a> -->
+                    </div>
+                </div>
+            </div>
+            <!--Slider Item5-->
 		
 		
     </div>
@@ -439,16 +470,13 @@ But, we charge a nominal Refundable amount(approximately 10%) to make sure that 
 
             <!--Contact Form-->
             <div class="span3">
-                <h4>ADDRESS</h4>
+                <h4>Training Center Address</h4>
                 <ul class="unstyled address">
                     <li>
-                        <i class="icon-home"></i><strong></strong> Oracle Information Systems.
-​	6th floor, Naga suri plaza,
-Above Bank of India bank​,
-Sathyam theater road,
-Beside prime hostpital,
-Ameerpet.
-Hyderabad, Telangana 500082
+                        <i class="icon-home"></i><strong></strong>Flat No.303, Mahindra Residency,
+						Beside Aditya Trade Center, 
+						Ameerpet,Hyd - 38, 
+						<br>Land Mark: Passport Office
                     </li>
                     <li>
                         <i class="icon-envelope"></i>
@@ -458,11 +486,11 @@ Hyderabad, Telangana 500082
                         <i class="icon-globe"></i>
                         <strong>Website:</strong> www.jalatechnologies.com
                     </li>
-                   <li>
+                  <li>
                         <i class="icon-phone"></i>
-                        <p><strong>Phone:</strong>  755-733-1102<br>
+                        <p><strong>Phone:</strong> <!--733-110-6027<br>
 						 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						 &nbsp;&nbsp;798-993-9242</p>
+						 &nbsp;&nbsp;--> 939-800-5507</p>
                     </li>
                 </ul>
             </div>
